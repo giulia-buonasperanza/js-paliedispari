@@ -3,7 +3,7 @@
 
 //FUNZIONE
 
-function esserePalindomo (parola) {
+function esserePalindromo (parola) { //dichiarazione della funzione
     let isPalindromo = true;
     for (i=0; i < parola.length / 2 && isPalindromo; i++){
     const inizio = parola[i];
@@ -13,7 +13,7 @@ function esserePalindomo (parola) {
             isPalindromo = false;
         }
     }
-
+    //restituzione dei valori
      if (isPalindromo) {
         return true;
     } else {
@@ -22,3 +22,16 @@ function esserePalindomo (parola) {
 }
 
 //MAIN
+
+
+ //chiedo all'utente di inserire una parola
+const parolaInserita = prompt('Inserisci un possibile palindromo');
+
+if (parolaInserita === '') {//controllo l'inserimento della parola
+    console.error('Hai inserito una stringa vuota');
+} else { //
+    console.log (esserePalindromo(parolaInserita)); //invocazione della funzione e risultato
+}
+
+
+
