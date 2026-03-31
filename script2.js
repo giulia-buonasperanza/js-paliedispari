@@ -16,16 +16,44 @@ Dichiariamo chi ha vinto.*/
 
 //FUNZIONI
 
-function randomNumber (min, max) {
+//funzione per generare un numero random tra un minimo e un massimo
+function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function evenOddNumber (number){
-        let evenNumber = true;
-        if(number%2 === 0){
-            evenNumber = true;
-        } else {
-            evenNumber = false;
-        }
-        return evenNumber;
+//funzione per capire se un numero è pari o dispari
+function evenOddNumber(number) {
+    let evenNumber = true;
+    if (number % 2 === 0) {
+        evenNumber = true;
+    } else {
+        evenNumber = false;
+    }
+    return evenNumber;
 }
+//un po' prolissa come forma, ma mi aiuta a visulizzare la funzione
+
+
+//MAIN
+
+//prompt per scegliere se l'utente vuole pari o dispari.
+let userChoiceIsEven = true;
+let chooseEvenOdd = prompt('scegli tra pari o dispari');
+
+if (chooseEvenOdd.toLowerCase() === 'pari') {
+    userChoiceIsEven = true;
+}else {
+    userChoiceIsEven = false;
+}
+
+//prompt per far scegliere all'utente un numero tra 1 e 5
+let myNumber = prompt('scegli un numero tra 1 e 5');
+
+if ( parseInt(myNumber) >= 1 && parseInt(myNumber) <= 5 && !isNaN(parseInt(myNumber))) {
+    console.log('Il tuo numero è:', myNumber);
+} else {
+    console.error('inserisci un numero valido');
+}
+
+
+
