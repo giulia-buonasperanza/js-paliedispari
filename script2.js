@@ -19,3 +19,13 @@ Dichiariamo chi ha vinto.*/
 function randomNumber (min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+function evenOddNumber (number){
+        let evenNumber = true;
+        if(number%2 === 0){
+            evenNumber = true;
+        } else {
+            evenNumber = false;
+        }
+        return evenNumber;
+}
