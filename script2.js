@@ -66,4 +66,16 @@ console.log('Il numero del tuo avversario è:', randomNumberCpu);
 let sumNumbers = Number(myNumber) + randomNumberCpu;
 console.log('la somma è:', sumNumbers);
 
+//con la mia funzione controllo se la somma dei due numeri è pari o dispari
+let sumEvenOdd = evenOddNumber(sumNumbers);
+
+//confronto la somma con la scelta dell'utente.
+
+if (sumEvenOdd === userChoiceIsEven) {
+    console.log('HAI VINTO!!');
+} else {
+    console.log('HAI PERSO!')
+}
+
+
 
