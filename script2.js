@@ -55,5 +55,15 @@ if ( parseInt(myNumber) >= 1 && parseInt(myNumber) <= 5 && !isNaN(parseInt(myNum
     console.error('inserisci un numero valido');
 }
 
+//inserisco la funzione per generare un numero random per il computer
+const minNumber = 1;
+const maxNumber = 5;
+
+let randomNumberCpu = randomNumber(minNumber, maxNumber);
+console.log('Il numero del tuo avversario è:', randomNumberCpu);
+
+//sommo il numero casuale dell'utente e il numero casuale del computer
+let sumNumbers = Number(myNumber) + randomNumberCpu;
+console.log('la somma è:', sumNumbers);
 
 
